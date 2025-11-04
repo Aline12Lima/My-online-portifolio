@@ -12,18 +12,32 @@ Você pode acessar a versão ao vivo do meu portfólio hospedada no GitHub Pages
 
 O objetivo deste projeto é apresentar de forma clara e objetiva minhas competências técnicas, projetos acadêmicos relevantes (como minha Iniciação Científica em Machine Learning) e minhas experiências profissionais anteriores.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Stacks 
 
 O site foi construído utilizando as seguintes tecnologias web:
 
-* **HTML5**
-* **CSS3**
-* **Tailwind**
+## Núcleo do Projeto(Framework e Build)
+* **React**
+* **React-dom**
+* **vite**
 * **TypeScript**
-* **JavaScript** 
-* **GitHub Pages** 
 
----
+  ## Estilização e Utilitários
+* **CSS**
+* **Tailwind**
+* **Tailwind animation**
+
+  ## Componentes de UI
+* **Icones**
+* **Carrossel**
+* **Formulário**
+* **Troca de Tema**
+
+  ## Hospedagem
+* **GitHub Pages**
+
+
+---------------
 
 ## 📂 Como Executar Localmente
 
