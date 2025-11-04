@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
+import fotoPerfilSrc from "@/assets/perfil-foto.jpg";
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -21,7 +22,7 @@ const Hero = () => {
           <div className="space-y-4 animate-in fade-in slide-in-from-bottom duration-700">
             <div className="mx-auto w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden ring-4 ring-primary/30">
               <img
-                src="/perfil-foto.jpg"
+                src={fotoPerfilSrc}
                 alt="Foto de Aline Lima"
                 className="w-full h-full object-cover"
               />
