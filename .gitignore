@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Dependências
+node_modules
+
+# Cache do Vite
+.vite
+
+# Variáveis de ambiente
+.env
+.env.*
