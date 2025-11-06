@@ -1,6 +1,6 @@
 # Portfólio Pessoal | Aline Lima
 
-Este é o repositório do meu portfólio pessoal, uma landing page que centraliza minhas habilidades, projetos e minha trajetória profissional como estudante de Análise e Desenvolvimento de Sistemas.
+Este é o repositório do meu portfólio pessoal, uma SPA page que centraliza minhas habilidades, projetos e minha trajetória profissional como estudante de Análise e Desenvolvimento de Sistemas.
 
 ## 🚀 Demo Ao Vivo
 
