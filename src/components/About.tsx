@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: <Code2 className="w-8 h-8" />,
       title: "Linguagens",
-      items: ["Python", "JavaScript", "HTML/CSS"],
+      items: ["Python", "JavaScript", "HTML/CSS", "TypeScript"],
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Frameworks",
-      items: ["PyTorch", "Tailwind CSS"],
+      items: ["PyTorch", "Tailwind CSS", "React.js"],
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "Machine Learning",
-      items: ["Deep Learning", "Redes Neurais"],
+      title: "IA & ML",
+      items: ["IA", "Machine Learning", "Deep Learning"],
     },
     {
       icon: <Layout className="w-8 h-8" />,
       title: "Conceitos",
-      items: ["Análise de Imagens", "Processamento"],
+      items: ["SPA", "Responsive Design", "Git & GitHub", "Processamento de Imagens" ],
     },
   ];
 
@@ -39,13 +39,19 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Estudante de <span className="text-primary font-semibold">Análise e Desenvolvimento de Sistemas</span> com experiência prática em projetos de{" "}
-                <span className="text-primary font-semibold">Machine Learning (Python/PyTorch)</span> e{" "}
-                <span className="text-primary font-semibold">desenvolvimento web</span>.
+                Olá! Sou Aline Lima, uma entusiasta de tecnologia apaixonada por
+                explorar o mundo do desenvolvimento de software. Atualmente,
+                estou cursando Análise e Desenvolvimento de Sistemas e IA onde
+                tenho adquirido conhecimentos sólidos em diversas áreas da
+                computação. Gosto de trabalhar com desenvolvimento web, IA e
+                aprendizado de máquina.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Buscando aplicar habilidades analíticas para criar soluções de software eficientes, 
-                combinando minha vivência anterior em administração, logística e gestão de equipes.
+                Estudando{" "}
+                <span className="text-primary font-semibold">
+                  Análise e Desenvolvimento de Sistemas
+                </span>{" "}
+                na Universidade São Francisco.{" "}
               </p>
             </div>
 
@@ -57,7 +63,9 @@ const About = () => {
                 >
                   <div className="space-y-3">
                     <div className="text-primary">{skill.icon}</div>
-                    <h3 className="font-semibold text-foreground">{skill.title}</h3>
+                    <h3 className="font-semibold text-foreground">
+                      {skill.title}
+                    </h3>
                     <ul className="space-y-1">
                       {skill.items.map((item, i) => (
                         <li key={i} className="text-sm text-muted-foreground">

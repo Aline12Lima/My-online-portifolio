@@ -63,7 +63,7 @@ const Hero = () => {
 
           <div className="flex gap-6 justify-center items-center pt-8 animate-in fade-in slide-in-from-bottom duration-700 delay-300">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/aline-lima-397a84202/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

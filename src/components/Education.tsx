@@ -6,7 +6,7 @@ const Education = () => {
     {
       degree: "Análise e Desenvolvimento de Sistemas",
       institution: "Universidade São Francisco (USF)",
-      period: "Previsão de Conclusão: 2025",
+      period: "Previsão de Conclusão: Junho de 2027",
       status: "Em andamento",
       highlight: true,
     },
@@ -15,7 +15,39 @@ const Education = () => {
       institution: "Centro Universitário do Distrito Federal (UDF)",
       period: "2015 - 2017",
       status: "Concluído",
-      highlight: false,
+      highlight: true,
+    },
+    {
+      degree: "Formação em Programação web",
+      institution: "Rocketseat",
+      period:
+        "Html, CSS, JavaScript, React, Node.js  e projetos práticos - 2024 ",
+      status: "concluído",
+      highlight: true,
+    },
+    {
+      degree: "Python Basics for Data Science",
+      institution: "IBM",
+      period:
+        "Introduction to Python programming, data structures, and data analysis - 2024",
+      status: "Concluído",
+      highlight: true,
+    },
+    {
+      degree: "Introdução à Ciência da Computação (CS50)/2024",
+      institution: "Harvard University",
+      period:
+        "Fundamentos de programação, algoritmos, estruturas de dados e desenvolvimento de software - 2024",
+      status: "Concluído 2024 iniciando novo modulo de 2025",
+      highlight: true,
+    },
+    {
+      degree: "Python for Beginners",
+      institution: "OpenCV",
+      period:
+        "Introduction to Python Language, Basiscs, and Fundamentals -  2025",
+      status: "Concluído",
+      highlight: true,
     },
   ];
 

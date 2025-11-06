@@ -12,14 +12,15 @@ const Contact = () => {
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto"></div>
             <p className="text-xl text-muted-foreground">
-              Vamos conversar! Estou disponível para oportunidades e novos projetos.
+              Vamos conversar! Estou disponível para oportunidades e novos
+              projetos.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             <Card className="p-6 bg-card border-border hover:border-primary transition-all duration-300 hover:scale-105">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/aline-lima-397a84202/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-4 text-center"
@@ -28,7 +29,9 @@ const Contact = () => {
                   <Linkedin className="w-8 h-8 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">LinkedIn</h3>
+                  <h3 className="font-semibold text-foreground mb-1">
+                    LinkedIn
+                  </h3>
                   <p className="text-sm text-muted-foreground">
                     Conecte-se comigo
                   </p>
@@ -38,7 +41,7 @@ const Contact = () => {
 
             <Card className="p-6 bg-card border-border hover:border-primary transition-all duration-300 hover:scale-105">
               <a
-                href="https://github.com"
+                href="https://github.com/Aline12Lima"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-4 text-center"

@@ -9,6 +9,7 @@ export default defineConfig({
     host: "::",
     port: 8080,
   },
+
   plugins: [react()],
 
   resolve: {

@@ -4,6 +4,19 @@ import { Briefcase } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      role: "Projeto Acadêmico: Iniciação Cientifica",
+      company: "Machine Learning aplicado à Saúde",
+      period: "2025 - Presente",
+      description:
+        "Pesquisa desenvolvida na USF, com foco em classificação de pneumonia usando Deep Learning e visão computacional. Atividades: coleta e tratamento de dados, construção e validação de modelos de IA, análise de resultados e documentação técnica.",
+      highlights: [
+        "Execução de Testes",
+        "Planejamento de Arquiteturas",
+        "Planejamento de Dataset",
+        "Produção de Documentação Técnica",
+      ],
+    },
+    {
       role: "Administrativo de Obras",
       company: "Diase Construtora",
       period: "2021 - 2023",
@@ -54,14 +67,16 @@ const Experience = () => {
                       <Briefcase className="w-6 h-6 text-primary" />
                     </div>
                   </div>
-                  
+
                   <div className="flex-1 space-y-4">
                     <div>
                       <h3 className="text-2xl font-bold text-foreground mb-1">
                         {exp.role}
                       </h3>
                       <p className="text-primary font-medium">{exp.company}</p>
-                      <p className="text-sm text-muted-foreground">{exp.period}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {exp.period}
+                      </p>
                     </div>
 
                     <p className="text-muted-foreground leading-relaxed">
