@@ -1,26 +1,25 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import img1 from "@/assets/Acuracia.jpg";
-import img2 from "@/assets/CBAM.jpg";
+import img2 from "@/assets/Cbam.png";
 import img3 from "@/assets/Mari.Nutri.jpg";
-import img4 from "@/assets/Tinder_clone.jpg";
+import img4 from "@/assets/capa-zoonese.png";
 import img5 from "@/assets/my-portfolio.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Detecção de Pneumonia com Deep Learning",
+      title: "Projeto de Iniciação Científica - Artigo em Conferência",
       image: img2,
-      tag: "Iniciação Científica",
+      tag: "Mitigação de viés de luminosidade em classificação de raio-X",
       description:
-        "Desenvolvi modelos para classificar radiografias de tórax (Normal vs. Pneumonia). Apliquei técnicas de processamento de imagem e segmentação pulmonar, implementando e comparando arquiteturas de CNN (como DenseNet121, CBAM e U-net) usando PyTorch.",
-      tags: ["Python", "PyTorch", "Deep Learning", "CNN", "DenseNet121"],
+        "Este projeto mitiga o shortcut learning em diagnósticos de pneumonia via Deep Learning, integrando o módulo de atenção CBAM à arquitetura DenseNet121 para neutralizar o viés de luminosidade. Enquanto o modelo baseline agrupa dados por brilho em apenas três macro-clusters, o Modelo B reorganiza o espaço latente em 47 micro-clusters morfológicos, focando em padrões patológicos reais. Com o uso de UMAP e HDBSCAN, comprovou-se que a atenção espacial e de canal reduz a influência de artefatos técnicos, elevando a sensibilidade para 94,1%. Assim, os erros tornam-se clinicamente coerentes, garantindo maior estabilidade e interpretabilidade ao diagnóstico automatizado.",
+      tags: ["Python", "PyTorch", "Deep Learning", "OpenCV", "DenseNet121", "CBAM", "UMAP", "HDBSCAN", "Kaggle"],
       featured: true,
-      github: "https://github.com/Aline12Lima/treino-3-Xray-pneumonia",
+      github: "https://github.com/Aline12Lima/pneumonia-xray-bias-mitigation",
     },
     {
-      title: "SPA - Site Pessoal de uma Nutricionista",
+      title: "SPA - Nutricionista",
       image: img3,
       tag: "Freelancer",
       description:
@@ -30,14 +29,15 @@ const Projects = () => {
       github: "https://github.com/Aline12Lima/marianne-nutricionista",
     },
     {
-      title: "App Clone do Tinder",
+      title: "SPA- Vonluntária ",
       image: img4,
-      tag: "Projeto para Estudo",
+      tag: "Projeto Voluntário",
       description:
-        " Projeto Clone do Tinder desenvolvido para estudo de Next.js com React, TypeScript e Supabase. Explora rotas de API, autenticação e renderização dinâmica. Estilizado com Tailwind CSS, com foco em performance e arquitetura moderna.",
-      tags: ["Next.js", "React", "TypeScript", "Supabase", "Tailwind CSS"],
+        " Este projeto reforça meu interesse em usar a tecnologia como ferramenta de transformação social, além de demonstrar minha capacidade de atuar em projetos reais, mesmo sem fins lucrativos, entregando valor e responsabilidade.",
+      tags: [ "React", "TypeScript", "Supabase", "Tailwind CSS", "GitHub Pages", "Build"],
       featured: false,
-      github: "https://github.com/Aline12Lima/Clone-App-Datting",
+      github: "https://github.com/Aline12Lima/Zooneses_Extrema",
+     
     },
     {
       title: "Meu Portfólio Online",
@@ -149,7 +149,7 @@ const Projects = () => {
 
                       {project.featured && (
                         <a
-                          href="https://link-do-artigo.com" // opcional
+                          href="https://ensaios.usf.edu.br/ensaios/index" // opcional
                           target="_blank"
                           rel="noopener noreferrer"
                         >
