@@ -4,10 +4,29 @@ import { ExternalLink, Github } from "lucide-react";
 import img2 from "@/assets/Cbam.png";
 import img3 from "@/assets/Mari.Nutri.jpg";
 import img4 from "@/assets/capa-zoonese.png";
-import img5 from "@/assets/my-portfolio.jpg";
+import img5 from "@/assets/Capa_ande_card.png";
 
 const Projects = () => {
   const projects = [
+
+    {
+      title: "ONG Ande",
+      image: img5,
+      tag: "Ações Sociais - Extrema-MG",
+      description:
+        " Projeto ONG ANDE: Aplicação web institucional desenvolvida com React, JavaScript e Tailwind CSS. Foco em performance (Vite), design responsivo e monitoramento de erros integrado com Sentry.",
+      tags: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "SPA",
+        "Vercel",
+        "Deploy",
+      ],
+      github: "https://github.com/Aline12Lima/Projetos_Voluntarios/tree/main/Ande-projeto",
+      featured: true,
+    },
     {
       title: "Projeto de Iniciação Científica - Artigo em Conferência",
       image: img2,
@@ -15,7 +34,7 @@ const Projects = () => {
       description:
         "Este projeto mitiga o shortcut learning em diagnósticos de pneumonia via Deep Learning, integrando o módulo de atenção CBAM à arquitetura DenseNet121 para neutralizar o viés de luminosidade. Enquanto o modelo baseline agrupa dados por brilho em apenas três macro-clusters, o Modelo B reorganiza o espaço latente em 47 micro-clusters morfológicos, focando em padrões patológicos reais. Com o uso de UMAP e HDBSCAN, comprovou-se que a atenção espacial e de canal reduz a influência de artefatos técnicos, elevando a sensibilidade para 94,1%. Assim, os erros tornam-se clinicamente coerentes, garantindo maior estabilidade e interpretabilidade ao diagnóstico automatizado.",
       tags: ["Python", "PyTorch", "Deep Learning", "OpenCV", "DenseNet121", "CBAM", "UMAP", "HDBSCAN", "Kaggle"],
-      featured: true,
+    
       github: "https://github.com/Aline12Lima/pneumonia-xray-bias-mitigation",
     },
     {
@@ -29,7 +48,7 @@ const Projects = () => {
       github: "https://github.com/Aline12Lima/marianne-nutricionista",
     },
     {
-      title: "SPA- Vonluntária ",
+      title: "SPA- Projeto Zooneses",
       image: img4,
       tag: "Projeto Voluntário",
       description:
@@ -39,24 +58,7 @@ const Projects = () => {
       github: "https://github.com/Aline12Lima/Zooneses_Extrema",
      
     },
-    {
-      title: "Meu Portfólio Online",
-      image: img5,
-      tag: "Projeto Pessoal",
-      description:
-        " Portfólio pessoal desenvolvido como Single Page Application (SPA) com React, React-dom, TypeScript, Vite e Tailwind CSS, baseada em componentes, destacando minha trajetória e projetos.O site apresenta design responsivo, animações modernas e alternância de tema.Hospedado no GitHub Pages, oferece uma navegação fluida e profissional.",
-      tags: [
-        "React",
-        "TypeScript",
-        "Vite",
-        "Tailwind CSS",
-        "SPA",
-        "GitHub Pages",
-        "Build",
-      ],
-      github: "https://github.com/Aline12Lima/My-online-portifolio",
-      featured: false,
-    },
+    ,
   ];
 
   return (
@@ -149,7 +151,7 @@ const Projects = () => {
 
                       {project.featured && (
                         <a
-                          href="https://ensaios.usf.edu.br/ensaios/index" // opcional
+                          href="https://ong-ande.vercel.app/" // opcional
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -159,7 +161,7 @@ const Projects = () => {
                             className="border-primary text-primary hover:bg-primary hover:text-white"
                           >
                             <ExternalLink className="w-4 h-4 mr-2" />
-                            Ver Artigo
+                            Ver Resultado
                           </Button>
                         </a>
                       )}
