@@ -10,7 +10,7 @@ const Projects = () => {
   const projects = [
 
     {
-      title: "ONG Ande",
+      title: "Landing Page - ONG Ande",
       image: img5,
       tag: "Ações Sociais - Extrema-MG",
       description:
@@ -38,17 +38,17 @@ const Projects = () => {
       github: "https://github.com/Aline12Lima/pneumonia-xray-bias-mitigation",
     },
     {
-      title: "SPA - Nutricionista",
+      title: "Landing Page - Nutricionista",
       image: img3,
       tag: "Freelancer",
       description:
-        "Landing Page desenvolvida como Single Page Application (SPA) para uma nutricionista, utilizando React, TypeScript, Vite e Tailwind CSS. O projeto destaca design responsivo, animações e arquitetura simples e moderna.",
+        "Landing Page desenvolvida  para uma nutricionista, utilizando React, TypeScript, Vite e Tailwind CSS. O projeto destaca design responsivo, animações e arquitetura simples e moderna.",
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "SPA"],
       featured: false,
       github: "https://github.com/Aline12Lima/marianne-nutricionista",
     },
     {
-      title: "SPA- Projeto Zooneses",
+      title: "Landing Page - Projeto Zooneses",
       image: img4,
       tag: "Projeto Voluntário",
       description:
