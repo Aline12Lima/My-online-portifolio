@@ -5,10 +5,10 @@ import img2 from "@/assets/Cbam.png";
 import img3 from "@/assets/Mari.Nutri.jpg";
 import img4 from "@/assets/capa-zoonese.png";
 import img5 from "@/assets/Capa_ande_card.png";
+import { features } from "process";
 
 const Projects = () => {
   const projects = [
-
     {
       title: "Landing Page - ONG Ande",
       image: img5,
@@ -24,7 +24,9 @@ const Projects = () => {
         "Vercel",
         "Deploy",
       ],
-      github: "https://github.com/Aline12Lima/Projetos_Voluntarios/tree/main/Ande-projeto",
+      github:
+        "https://github.com/Aline12Lima/Projetos_Voluntarios/tree/main/Ande-projeto",
+      site: "https://ong-ande.vercel.app/",
       featured: true,
     },
     {
@@ -33,8 +35,18 @@ const Projects = () => {
       tag: "Mitigação de viés de luminosidade em classificação de raio-X",
       description:
         "Este projeto mitiga o shortcut learning em diagnósticos de pneumonia via Deep Learning, integrando o módulo de atenção CBAM à arquitetura DenseNet121 para neutralizar o viés de luminosidade. Enquanto o modelo baseline agrupa dados por brilho em apenas três macro-clusters, o Modelo B reorganiza o espaço latente em 47 micro-clusters morfológicos, focando em padrões patológicos reais. Com o uso de UMAP e HDBSCAN, comprovou-se que a atenção espacial e de canal reduz a influência de artefatos técnicos, elevando a sensibilidade para 94,1%. Assim, os erros tornam-se clinicamente coerentes, garantindo maior estabilidade e interpretabilidade ao diagnóstico automatizado.",
-      tags: ["Python", "PyTorch", "Deep Learning", "OpenCV", "DenseNet121", "CBAM", "UMAP", "HDBSCAN", "Kaggle"],
-    
+      tags: [
+        "Python",
+        "PyTorch",
+        "Deep Learning",
+        "OpenCV",
+        "DenseNet121",
+        "CBAM",
+        "UMAP",
+        "HDBSCAN",
+        "Kaggle",
+      ],
+
       github: "https://github.com/Aline12Lima/pneumonia-xray-bias-mitigation",
     },
     {
@@ -46,6 +58,8 @@ const Projects = () => {
       tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "SPA"],
       featured: false,
       github: "https://github.com/Aline12Lima/marianne-nutricionista",
+      site: "https://marianne-nutricionista.vercel.app/",
+      feature: true,
     },
     {
       title: "Landing Page - Projeto Zooneses",
@@ -53,12 +67,19 @@ const Projects = () => {
       tag: "Projeto Voluntário",
       description:
         " Este projeto reforça meu interesse em usar a tecnologia como ferramenta de transformação social, além de demonstrar minha capacidade de atuar em projetos reais, mesmo sem fins lucrativos, entregando valor e responsabilidade.",
-      tags: [ "React", "TypeScript", "Supabase", "Tailwind CSS", "GitHub Pages", "Build"],
+      tags: [
+        "React",
+        "TypeScript",
+        "Supabase",
+        "Tailwind CSS",
+        "GitHub Pages",
+        "Build",
+      ],
       featured: false,
       github: "https://github.com/Aline12Lima/Zooneses_Extrema",
-     
+      site: "https://zooneses-extrema.vercel.app/",
+      feature: true,
     },
-    ,
   ];
 
   return (
@@ -149,9 +170,9 @@ const Projects = () => {
                         </a>
                       )}
 
-                      {project.featured && (
+                      {project.site && (
                         <a
-                          href="https://ong-ande.vercel.app/" // opcional
+                          href={project.site}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
