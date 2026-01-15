@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import img2 from "@/assets/Cbam.png";
 import img3 from "@/assets/Mari.Nutri.jpg";
-import img4 from "@/assets/capa-zoonese.png";
+import img4 from "@/assets/Saloncapa.png";
 import img5 from "@/assets/Capa_ande_card.png";
 import { features } from "process";
 
