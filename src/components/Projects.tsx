@@ -10,6 +10,26 @@ import { features } from "process";
 const Projects = () => {
   const projects = [
     {
+      title: "Web App - Beauty Salon",
+      image: img4,
+      tag: "Site Profissional",
+      description:
+        " Website institucional premium com interface responsiva, sistema de depoimentos dinâmico e performance otimizada, garantindo uma experiência de navegação fluida e conversão de clientes.",
+      tags: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "GitHub Pages",
+        "Build",
+        "Deploy",
+        "vite",
+      ],
+      featured: false,
+      github: "https://github.com/Aline12Lima/SalonX",
+      site: "https://salon-x-nu.vercel.app/",
+      feature: true,
+    },
+    {
       title: "Landing Page - ONG Ande",
       image: img5,
       tag: "Ações Sociais - Extrema-MG",
@@ -59,26 +79,6 @@ const Projects = () => {
       featured: false,
       github: "https://github.com/Aline12Lima/marianne-nutricionista",
       site: "https://marianne-nutricionista.vercel.app/",
-      feature: true,
-    },
-    {
-      title: "Web App - Beauty Salon",
-      image: img4,
-      tag: "Site Profissional",
-      description:
-        " Website institucional premium com interface responsiva, sistema de depoimentos dinâmico e performance otimizada, garantindo uma experiência de navegação fluida e conversão de clientes.",
-      tags: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "GitHub Pages",
-        "Build",
-        "Deploy",
-        "vite",
-      ],
-      featured: false,
-      github: "https://github.com/Aline12Lima/SalonX",
-      site: "https://salon-x-nu.vercel.app/",
       feature: true,
     },
   ];
