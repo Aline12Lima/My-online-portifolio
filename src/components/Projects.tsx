@@ -3,12 +3,19 @@ import img3 from "@/assets/Mari.Nutri.jpg";
 import img4 from "@/assets/Saloncapa.png";
 import img5 from "@/assets/Capa_ande_card.png";
 import img6 from "@/assets/odonto.png";
+import img7 from "@/assets/capaPsi.png";
 
 const Projects = () => {
   const projects = [
     {
+      title: "Psicóloga Angela ",
+      type: "LP- Landing Page com Formulário",
+      image: img7,
+      site: "https://psi-angela.alinelima.dev/",
+    },
+    {
       title: "Beauty Salon",
-      type: "SPA - Single Page Application",
+      type: "Site completo",
       image: img4,
       site: "https://salon-x-nu.vercel.app/",
     },
