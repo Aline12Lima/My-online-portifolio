@@ -4,9 +4,16 @@ import img4 from "@/assets/Saloncapa.png";
 import img5 from "@/assets/Capa_ande_card.png";
 import img6 from "@/assets/odonto.png";
 import img7 from "@/assets/capaPsi.png";
+import img8 from "@/assets/capaJB.png";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Site - JB Construtora ",
+      type: " Site completo",
+      image: img8,
+      site: "https://jb-construtech.vercel.app/",
+    },
     {
       title: "Psicóloga Angela ",
       type: "LP- Landing Page com Formulário",
