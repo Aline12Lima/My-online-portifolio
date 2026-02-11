@@ -10,6 +10,7 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -18,6 +19,7 @@ const Navigation = () => {
     { label: "Início", href: "#home" },
     { label: "Sobre", href: "#about" },
     { label: "Projetos", href: "#projects" },
+    { label: "Ferramentas", href: "#tools" }, // corrigido
     { label: "Experiência", href: "#experience" },
     { label: "Formação", href: "#education" },
     { label: "Contato", href: "#contact" },
@@ -34,48 +36,57 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <a
-            href="#home"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("#home");
-            }}
-            className="text-2xl font-bold text-primary hover:text-accent transition-colors"
-          >
-            AL
-          </a>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(item.href);
-                }}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {item.label}
-              </a>
-            ))}
+        <div className="flex items-center">
+          {/* LOGO */}
+          <div className="flex-1">
+            <a
+              href="#home"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#home");
+              }}
+              className="text-2xl font-bold text-primary hover:text-accent transition-colors"
+            >
+              AL
+            </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X /> : <Menu />}
-          </Button>
+          {/* Desktop Navigation CENTRALIZADA */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="flex items-center gap-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(item.href);
+                  }}
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile Button / Right Side */}
+          <div className="flex-1 flex justify-end">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X /> : <Menu />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

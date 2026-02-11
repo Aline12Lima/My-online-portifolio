@@ -16,12 +16,12 @@ const About = () => {
     {
       icon: <Brain className="w-8 h-8" />,
       title: "IA & ML",
-      items: ["IA", "Machine Learning", "Deep Learning"],
+      items: ["IA", "Machine Learning"],
     },
     {
       icon: <Layout className="w-8 h-8" />,
       title: "Conceitos",
-      items: ["SPA", "Responsive Design", "Git & GitHub", "Processamento de Imagens" ],
+      items: ["SPA", "Responsive Design", "Git & GitHub"],
     },
   ];
 
